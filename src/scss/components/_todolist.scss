@@ -1,0 +1,40 @@
+.todo {
+  &__list {
+    padding: 10px 40px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 35px;
+  }
+  &__task {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+    &-text {
+      display: flex;
+      flex-grow: 1;
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 15px 50px 15px 20px;
+      border-radius: 5px;
+      font-size: 18px;
+      word-break: break-all;
+      margin-right: 20px;
+    }
+    &-remove {
+      display: flex;
+      background-color: rgba(253, 29, 29, 0.6);
+      border-radius: 15px;
+      padding: 3px;
+      margin-top: 12px;
+      height: 27px;
+      cursor: pointer;
+      svg {
+        path {
+          fill: rgba(255, 255, 255, 0.8);
+        }
+      }
+    }
+  }
+}
